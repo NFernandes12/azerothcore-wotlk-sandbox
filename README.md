@@ -49,7 +49,7 @@ ChatHandler(player->GetSession()).PSendSysMessage("Challenge mode has been enabl
 Respawn.DynamicRateCreature = 30
 Respawn.DynamicMinimumCreature = 60
 ```
-* **How I Fixed It:** By dropping the threshold rate to 30, I told the server to start scaling spawn timers back much earlier. At Westfall's 80 bot load this flattened the math loop to calculate ~1.8 minute respawn pacing (30 / 80 = 0.375$ multiplier on a standard 5-minute spawn).
+* **How I Fixed It:** By dropping the threshold rate to 30, I told the server to start scaling spawn timers back much earlier. At Westfall's 80 bot load this flattened the math loop to calculate ~1.8 minute respawn pacing (30 / 80 = 0.375 multiplier on a standard 5-minute spawn).
 
 ### Future Roadmap
 *  I have plans to modify both the game server and client systems, along with some custom server side features and frontend client side modifications.
